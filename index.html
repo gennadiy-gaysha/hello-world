@@ -8,12 +8,170 @@
   </head>
   <body>
     <h1>Hello HTML:)</h1>
-    <hr>
+    <hr />
     <h1>Title 1</h1>
     <h2>Title 2</h2>
     <h3>Title 3</h3>
     <h4>Title 4</h4>
     <h5>Title 5</h5>
     <h6>Title 6</h6>
+    <hr />
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>
+          Click here to view more
+          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.
+        </p>
+        <a href="https://freecatphotoapp.com"
+          ><img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."
+        /></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+          />
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="Five cats looking around a field."
+          />
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label
+              ><input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+                checked
+              />
+              Indoor</label
+            >
+            <label
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <hr />
+    <table border="1" cellpadding="3">
+      <caption>
+        Совершенные покупки
+      </caption>
+      <thead>
+        <tr>
+          <th>Номер</th>
+          <th>Имя продукта</th>
+          <th>Количество</th>
+          <th>Цена</th>
+        </tr>
+      </thead>
+      <!-- Тег tfoot должен быть расположен перед тегом tbody -->
+      <tfoot>
+        <tr>
+          <th colspan="3">Всего:</th>
+          <td>364.04</td>
+          <!-- <td>empty</td>
+          <td>empty</td> -->
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Лимон</td>
+          <td>3</td>
+          <td>45.5</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Апельсин</td>
+          <td>2</td>
+          <td>32,8</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Банан</td>
+          <td>6</td>
+          <td>24,99</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2>Paragraph example</h2>
+    <p>
+      Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit.
+      <strong>Dolorum quis nulla inventore</strong> nesciunt, ea tenetur sunt
+      quod provident commodi. Est impedit <em>blanditiis</em> dolorem ducimus
+      dolores aut itaque deleniti harum incidunt.
+    </p>
+    <hr />
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
   </body>
 </html>
