@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+}
+h1 {
+  color: var(--block-secondary-color);
+  font-family: "PT Sans", sans-serif;
+
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    display: inline-block;
+    font-family: "PT Sans", sans-serif;
+    color: red;
+    background-color: yellow;
+  }
+}
+
+.bg {
+  background-image: url(../img/woman_with_mat_bg.jpg);
+  background-size: 100%;
+  height: 790px;
+  min-width: 100%;
+}
